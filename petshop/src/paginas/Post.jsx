@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { useParams, useHistory } from 'react-router-dom';
 import { busca } from '../api/api';
 import '../assets/css/post.css';
-import { useParams, useHistory } from 'react-router-dom';
 
 const Post = () => {
   let history = useHistory();
@@ -18,7 +18,7 @@ const Post = () => {
     <main className="container flex flex--centro">
       <article className="cartao post">
         <h2 className="cartao__titulo">{post.title}</h2>
-        <p className="cartao_texto">{post.body}</p>
+        <p className="carta__texto">{post.body}</p>
       </article>
     </main>
   );
